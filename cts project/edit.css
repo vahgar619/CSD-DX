@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+    padding: 10px;
+    background-color: #83e428;
+    color: white;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input, button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #83e428;
+    color: white;
+    cursor: pointer;
+}
+
+.inactive-btn {
+    margin: 20px auto; /* Center the button */
+    display: block; /* Make it a block element for centering */
+    padding: 10px;
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    background-color: #555;
+  }
+
+  button[class="inactive-btn"]:hover {
+    background-color: #555;
+  }
+
+.top-center {
+    text-align: center;
+}
+
+.top-right {
+    margin-left: auto;
+    background-color: #000;
+}

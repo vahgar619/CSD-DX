@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Product Details</title>
+    <link rel="stylesheet" href="edit.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="logo.jpg" alt="Logo" style="max-height: 100px;">
+        </div>
+        
+        <nav >
+            <a class="top-right" href="home.html">Home</a>
+            <a class="top-right" href="#">Contact Us</a>
+            <a class="top-right" href="#">About Us</a>
+            <a class="top-right" href="#">Users</a>
+            <a class="top-right" href="#">Edit Product</a>
+            <a class="top-right" href="#">Products</a>
+            <a class="top-right" href="#">Logout</a>
+        </nav>
+    </header>
+    
+    <main>
+        <form>
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" required>
+
+            <label for="category">Category:</label>
+            <input type="text" id="category" required>
+
+            <label for="mrp">MRP:</label>
+            <input type="number" id="mrp" required>
+
+            <label for="creationDate">Creation Date:</label>
+            <input type="date" id="creationDate" required>
+
+            <label for="expireDate">Expire Date:</label>
+            <input type="date" id="expireDate" required>
+
+            <button type="submit" onclick="updateProduct()">Update Product Details</button>
+        </form>
+        <button class="inactive-btn" onclick="inactivateProduct()">Inactivate Product</button>
+    </main>
+
+</body>
+</html>
